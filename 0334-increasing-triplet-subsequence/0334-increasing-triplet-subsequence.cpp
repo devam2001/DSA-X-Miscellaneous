@@ -1,3 +1,4 @@
+#define forall for(auto x:nums)
 class Solution {
 public:
     bool increasingTriplet(vector<int>& nums) {
@@ -8,7 +9,7 @@ public:
         //     return true;
         // }
         // else{
-            for(auto x:nums){
+            forall{
                 if(x <= a) a = x;
                 else if(x <= b) b = x;
                 else  return true;
